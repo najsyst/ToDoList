@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>ToDoList</title>
+</head>
+<body>
+    <main>
+        <div class="menu-section">
+            <h1>Menu</h1>
+            <input type="text" name="searchInput" placeholder="Search">
+            <div class="tasks">
+                <p>Tasks</p>
+                <ul>
+                    <li>Upcoming</li>
+                    <li>Today</li>
+                    <li>Calendar</li>
+                    <li>Sticky Wall</li>
+                </ul>
+            </div>
+            <div class="lists">
+                <p>Lists</p>
+                <ul>
+                    <li>Personal</li>
+                    <li>Work</li>
+                    <li>List1</li>
+                    <li>Add New List</li>
+                </ul>
+            </div>
+            <div class="tags">
+                <p>Tags</p>
+            </div>
+            <button>Settings</button>
+            <button>Sign out</button>
+        </div>
+        <div class="middle-section">
+            <h2>Today</h2>
+            <input type="text" name="taskInput" placeholder="Add new task">
+            <ul>
+                <li>Posprzątać</li>
+                <li>Zrobić zakupy</li>
+            </ul>
+        </div>
+        <div class="task-section">
+            <h3>Taks:</h3>
+            <input type="text" name="taskName" placeholder="---">
+            <input type="text" name="description" placeholder="---">
+            <div class="parameters">
+                <p>List</p>
+                <select>
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                </select>
+                <p>Due date</p>
+                <select>
+                    <option value="11-03-22">11-03-22</option>
+                </select>
+                <p>Tags</p>
+            </div>
+            <h4>Subtasks:</h4>
+            <button>Delete Task</button>
+            <button>Save changes</button>
+        </div>
+    </main>
+</body>
+</html>
