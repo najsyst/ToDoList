@@ -5,36 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ToDoList</title>
 </head>
 <body>
     <main>
         <div class="menu-section">
-            <h1>Menu</h1>
-            <input type="text" name="searchInput" placeholder="Search">
-            <div class="tasks">
-                <p>Tasks</p>
-                <ul>
-                    <li>Upcoming</li>
-                    <li>Today</li>
-                    <li>Calendar</li>
-                    <li>Sticky Wall</li>
-                </ul>
+            <div class="menu-container">
+                <h1 class="title">Menu</h1>
+                <input type="text" name="searchInput" placeholder="Search">
+                <div class="tasks">
+                    <p class="subtitle">TASKS</p>
+                    <ul>
+                        <li><button class="transparent"><i class="fa-solid fa-angles-right"></i>Upcoming</button></li>
+                        <li><i class="fa-sharp fa-solid fa-list"></i>Today</li>
+                        <li><i class="fa-regular fa-calendar-days"></i>Calendar</li>
+                        <li><i class="fa-solid fa-note-sticky"></i>Sticky Wall</li>
+                    </ul>
+                </div>
+                <div class="lists">
+                    <p class="subtitle">LISTS</p>
+                    <ul>
+                        <li>Personal</li>
+                        <li>Work</li>
+                        <li>List1</li>
+                        <li><button><i class="fa-solid fa-plus"></i>Add New List</button></li>
+                    </ul>
+                </div>
+                <div class="tags">
+                    <p class="subtitle">Tags</p>
+                </div>
+                <button>Settings</button>
+                <button>Sign out</button>
             </div>
-            <div class="lists">
-                <p>Lists</p>
-                <ul>
-                    <li>Personal</li>
-                    <li>Work</li>
-                    <li>List1</li>
-                    <li>Add New List</li>
-                </ul>
-            </div>
-            <div class="tags">
-                <p>Tags</p>
-            </div>
-            <button>Settings</button>
-            <button>Sign out</button>
         </div>
         <div class="middle-section">
             <h2>Today</h2>
