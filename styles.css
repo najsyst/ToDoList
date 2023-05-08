@@ -24,16 +24,18 @@ main {
   align-self: center;
   justify-self: center;
   width: 90%;
-  height: 90%;
+  height: 95%;
   background-color: rgb(209, 199, 199);
   border-radius: 3vh;
 }
 .menu-container {
+  height: 95%;
   margin: 1.5em;
   display: flex;
   flex-direction: column;
 }
 .title {
+  width: 100%;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -57,7 +59,7 @@ li {
   padding: 0.5rem 0;
 }
 
-i{
+i{ 
   margin-right: 1rem; 
 }
 
@@ -72,4 +74,29 @@ i{
 .transparent:hover {
   border: 1rem;
   background-color: rgb(151, 128, 128);
+}
+
+.title-container {
+  display: flex;
+}
+.menu-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+}
+
+.tag-button {
+  margin: 0.5rem 0;
+  width: auto;
+  background-color: rgb(161, 144, 144);
+  border-color: transparent;
+  border-radius: 1vh;
+}
+
+.tag-button:hover{
+  background-color: rgb(151, 128, 128);
+}
+
+.bb-container{
+  margin-top: auto;
 }

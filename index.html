@@ -15,31 +15,37 @@
     <main>
         <div class="menu-section">
             <div class="menu-container">
-                <h1 class="title">Menu</h1>
+                <div class="title-container">
+                    <h1 class="title">Menu</h1>
+                    <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
+                </div>
                 <input type="text" name="searchInput" placeholder="Search">
                 <div class="tasks">
                     <p class="subtitle">TASKS</p>
                     <ul>
                         <li><button class="transparent"><i class="fa-solid fa-angles-right"></i>Upcoming</button></li>
-                        <li><i class="fa-sharp fa-solid fa-list"></i>Today</li>
-                        <li><i class="fa-regular fa-calendar-days"></i>Calendar</li>
-                        <li><i class="fa-solid fa-note-sticky"></i>Sticky Wall</li>
+                        <li><button class="transparent"><i class="fa-sharp fa-solid fa-list"></i>Today</button></li>
+                        <li><button class="transparent"><i class="fa-regular fa-calendar-days"></i>Calendar</button></li>
+                        <li><button class="transparent"><i class="fa-solid fa-note-sticky"></i>Sticky Wall</button></li>
                     </ul>
                 </div>
                 <div class="lists">
                     <p class="subtitle">LISTS</p>
                     <ul>
-                        <li>Personal</li>
-                        <li>Work</li>
-                        <li>List1</li>
-                        <li><button><i class="fa-solid fa-plus"></i>Add New List</button></li>
+                        <li><button class="transparent">Personal</button></li>
+                        <li><button class="transparent">Work</button></li>
+                        <li><button class="transparent">List1</button></li>
+                        <li><button class="transparent"><i class="fa-solid fa-plus"></i>Add New List</button></li>
                     </ul>
                 </div>
                 <div class="tags">
                     <p class="subtitle">Tags</p>
+                    <button class="tag-button"><i class="fa-solid fa-plus"></i>Add Tag</button>
                 </div>
-                <button>Settings</button>
-                <button>Sign out</button>
+                <div class="bb-container">
+                    <button class="transparent"><i class="fa-sharp fa-solid fa-gear"></i></i>Settings</button>
+                    <button class="transparent"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign out</button>
+                </div>
             </div>
         </div>
         <div class="middle-section">
@@ -71,5 +77,6 @@
             <button>Save changes</button>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
