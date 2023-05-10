@@ -23,27 +23,36 @@
                 <div class="tasks">
                     <p class="subtitle">TASKS</p>
                     <ul>
-                        <li><button class="transparent"><i class="fa-solid fa-angles-right"></i>Upcoming</button></li>
-                        <li><button class="transparent"><i class="fa-sharp fa-solid fa-list"></i>Today</button></li>
-                        <li><button class="transparent"><i class="fa-regular fa-calendar-days"></i>Calendar</button></li>
-                        <li><button class="transparent"><i class="fa-solid fa-note-sticky"></i>Sticky Wall</button></li>
+                        <li>
+                            <div class="task-button-container">
+                                <button class="tasks-button"><i class="margin-icon fa-solid fa-angles-right"></i>Upcoming</button>  
+                            </div>
+                        </li>
+                        <li><button class="tasks-button"><i class=" margin-icon fa-sharp fa-solid fa-list"></i>Today</button></li>
+                        <li><button class="tasks-button"><i class=" margin-icon fa-regular fa-calendar-days"></i>Calendar</button></li>
+                        <li><button class="tasks-button"><i class=" margin-icon fa-solid fa-note-sticky"></i>Sticky Wall</button></li>
                     </ul>
                 </div>
                 <div class="lists">
                     <p class="subtitle">LISTS</p>
-                    <ul id="Lists-list">
-                        <li><button class="transparent">Personal</button></li>
-                        <li><button class="transparent">Work</button></li>
-                        <li><button class="transparent" id="add-list-button"><i class="fa-solid fa-plus"></i>Add New List</button></li>
+                    <ul id="lists-list">
+                        <li>
+                            <div class="list-button-container">
+                                <button class="transparent">Personal</button>
+                                <button class="delete-button">x</button>
+                            </div>
+                        </li>
+                        <li><button>Work</button></li>
+                        <li><button id="add-list-button"><i class="margin-icon fa-solid fa-plus"></i>Add New List</button></li>
                     </ul>
                 </div>
                 <div class="tags">
                     <p class="subtitle">Tags</p>
-                    <button class="tag-button"><i class="fa-solid fa-plus"></i>Add Tag</button>
+                    <button class="tag-button"><i class="margin-icon fa-solid fa-plus"></i>Add Tag</button>
                 </div>
                 <div class="bb-container">
-                    <button class="transparent"><i class="fa-sharp fa-solid fa-gear"></i></i>Settings</button>
-                    <button class="transparent"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign out</button>
+                    <button ><i class="margin-icon fa-sharp fa-solid fa-gear"></i></i>Settings</button>
+                    <button ><i class="margin-icon fa-solid fa-arrow-right-from-bracket"></i>Sign out</button>
                 </div>
             </div>
         </div>

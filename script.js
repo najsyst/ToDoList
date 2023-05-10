@@ -1,12 +1,12 @@
 const newListButton = document.getElementById("add-list-button");
-const list = document.getElementById("Lists-list");
-
+const list = document.getElementById("lists-list");
+const deleteButton = document.getElementsByClassName("delete-button")
 
 function addNewList(){
     newListButton.addEventListener('click', ()=>{
         const newButtonItem = document.createElement("button");
         const newListItem = document.createElement("li");
-
+        
         newButtonItem.classList.add("transparent");
         newListItem.appendChild(newButtonItem);
 
@@ -26,5 +26,14 @@ function addNewList(){
         list.insertBefore(newListItem, lastItem);
     })
 }
+
+function deleteSomething(){
+    deleteButtons.foreach(button =>{
+        button.addEventListener('click', ()=>{
+            
+        })
+    })
+}
+
 
 addNewList();

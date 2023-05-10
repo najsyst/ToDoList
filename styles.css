@@ -11,13 +11,38 @@ body {
   display: flex;
   background-color: rgb(183, 201, 183);
   justify-content: center;
+  align-items: center;
 }
 main {
   width: 80%;
+  height: 90%;
   display: grid;
   grid-template-columns: 0.75fr 1.5fr 0.75fr;
   background-color: white;
   border-radius: 3vh;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 3vh;
+  width: 100%;
+  text-align: left;
+}
+
+button:hover {
+  background-color: rgb(151, 128, 128);
+}
+
+input[name="searchInput"] {
+  margin: 1rem 0;
+  width: 100%;
+  border-radius: 3vh;
+  border-color: transparent;
+}
+
+li {
+  padding: 0.5rem 0;
 }
 
 .menu-section {
@@ -28,23 +53,32 @@ main {
   background-color: rgb(209, 199, 199);
   border-radius: 3vh;
 }
+
 .menu-container {
   height: 95%;
   margin: 1.5em;
   display: flex;
   flex-direction: column;
 }
-.title {
+
+.title-container {
+  display: flex;
   width: 100%;
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 
-input[name="searchInput"] {
-  margin: 1rem 0;
-  width: 100%;
-  border-radius: 3vh;
-  border-color: transparent;
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 80%;
+
+}
+
+.menu-button {
+  font-size: 2rem;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
 }
 
 .subtitle {
@@ -55,46 +89,25 @@ input[name="searchInput"] {
   padding: 1rem 0;
 }
 
-li {
-  padding: 0.5rem 0;
-}
-
-i{ 
+.margin-icon { 
   margin-right: 1rem; 
 }
 
-.transparent{
-  background-color: transparent;
-  width: 100%;
-  text-align: left;
-  border: none;
-  border-radius: 3vh;
-}
 
-.transparent:hover {
-  border: 1rem;
-  background-color: rgb(151, 128, 128);
-}
-
-.title-container {
+.list-button-container {
   display: flex;
 }
-.menu-button {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
+
+.delete-button{
+  width: 10%;
+  text-align: center;
+  border-radius: 100%;
 }
 
 .tag-button {
   margin: 0.5rem 0;
   width: auto;
   background-color: rgb(161, 144, 144);
-  border-color: transparent;
-  border-radius: 1vh;
-}
-
-.tag-button:hover{
-  background-color: rgb(151, 128, 128);
 }
 
 .bb-container{
